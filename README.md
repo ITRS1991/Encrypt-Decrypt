@@ -4,17 +4,17 @@
 bin\com\ITRS\EncryptDecrypt -- 编辑过的.class文件<br>
 src\com\ITRS\EncryptDecrypt -- 源文件<br>
 ## 2、exe使用说明
-###安装java
+### 2.1 安装java
 此工具由java开发，需要安装jre才能使用。
-####下载安装
+#### 2.1.1 下载安装
 百度搜索：jre 下载安装包,双击安装即可。
-####配置环境
+#### 2.1.2 配置环境
   右击“计算机”或“这台电脑”或“我的电脑”
   属性-->高级系统设置-->高级-->环境变量-->下侧“系统变量”做如下修改
     新建:JAVA_HOME  C:\Program Files (x86)\Java\jre1.8.0_111    //java的安装位置
     新建:CLASSPATH  ;.%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar	
     编辑:Path       ;C:\Program Files (x86)\Java\jre1.8.0_111\bin   //java安装包中bin的位置
-###加密-解密软件使用方法
+### 2.2 加密-解密软件使用方法
   “文件|打开”上传txt文件
       左侧文档框为上传的内容，右侧文本框为 加密/解密 。
   “文件|保存”下载txt文件
