@@ -1,7 +1,7 @@
 # txt文件内容的加密与解密
 ## 1、概述
 目前只上传了V1.0版本，需要V2.0可留邮箱（免费提供源码）<br>
-V1.0秘钥已配置在系统内部；V2.0可自定义秘钥
+V1.0秘钥已配置在系统内部；V2.0可自定义秘钥<br>
 &nbsp;&nbsp;bin\com\ITRS\EncryptDecrypt -- 编辑过的.class文件<br>
 &nbsp;&nbsp;src\com\ITRS\EncryptDecrypt -- 源文件<br>
 ## 2、exe使用说明
