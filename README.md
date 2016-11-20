@@ -9,13 +9,13 @@ src\com\ITRS\EncryptDecrypt -- 源文件<br>
 #### 2.1.1 下载安装
 百度搜索：jre 下载安装包,双击安装即可。
 #### 2.1.2 配置环境
-  右击“计算机”或“这台电脑”或“我的电脑”
-  属性-->高级系统设置-->高级-->环境变量-->下侧“系统变量”做如下修改
-    新建:JAVA_HOME  C:\Program Files (x86)\Java\jre1.8.0_111    //java的安装位置
-    新建:CLASSPATH  ;.%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar	
-    编辑:Path       ;C:\Program Files (x86)\Java\jre1.8.0_111\bin   //java安装包中bin的位置
+  右击“计算机”或“这台电脑”或“我的电脑”<br>
+  属性-->高级系统设置-->高级-->环境变量-->下侧“系统变量”做如下修改<br>
+    新建:JAVA_HOME  C:\Program Files (x86)\Java\jre1.8.0_111    //java的安装位置<br>
+    新建:CLASSPATH  ;.%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar	<br>
+    编辑:Path       ;C:\Program Files (x86)\Java\jre1.8.0_111\bin   //java安装包中bin的位置<br>
 ### 2.2 加密-解密软件使用方法
-  “文件|打开”上传txt文件
-      左侧文档框为上传的内容，右侧文本框为 加密/解密 。
-  “文件|保存”下载txt文件
-      保存的是右侧文本框中的内容。
+  “文件|打开”上传txt文件<br>
+      左侧文档框为上传的内容，右侧文本框为 加密/解密 。<br>
+  “文件|保存”下载txt文件<br>
+      保存的是右侧文本框中的内容。<br>
