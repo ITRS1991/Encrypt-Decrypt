@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>百度地图</title>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>  
+<script type="text/javascript">  
+        function load() {  
+            var map = new BMap.Map("container");  
+            var point = new BMap.Point(113.67312,34.758085); //默认中心点  
+            var marker = new BMap.Marker(point);  
+            var opts = {  
+                width: 250,     // 信息窗口宽度    
+                height: 100,     // 信息窗口高度    
+                //title: "信息窗口标题"  // 信息窗口标题    
+            }  
+              
+            // 创建窗口信息对象。  
+            //var infoWindow = new BMap.InfoWindow("这里显示提示信息", opts);  
+  
+  
+            marker.enableDragging(); //启用拖拽  
+            marker.addEventListener("dragend", function (e) {  
+                point = new BMap.Point(e.point.lng, e.point.lat); //标记坐标（拖拽以后的坐标）  
+                marker = new BMap.Marker(point);  
+  
+                document.getElementByIdx_x("lng").value = e.point.lng;  
+                document.getElementByIdx_x("lat").value = e.point.lat;  
+                infoWindow = new BMap.InfoWindow("当前位置<br />经度：" + e.point.lng + "<br />纬度：" + e.point.lat, opts);  
+  
+                map.openInfoWindow(infoWindow, point);  
+            })  
+  
+            map.addControl(new BMap.NavigationControl()); //左上角控件  
+            map.enableScrollWheelZoom(); //滚动放大  
+            map.enableKeyboard(); //键盘放大  
+  
+            map.centerAndZoom(point, 13); //绘制地图  
+            map.addOverlay(marker); //标记地图  
+  
+            // 打开信息窗口，infoWindow是创建窗口信息对象的信息  
+            //map.openInfoWindow(infoWindow, map.getCenter());  
+              
+            // 打开信息窗口  
+            map.openInfoWindow(map.getCenter());  
+        }  
+           
+</script>  
+<style type="text/css">  
+    html{height: 100%;}  
+    body{height: 50%;margin: 0px;padding: 0px;}  
+    #container{width:550px;height: 460px;}  
+</style>  
+</head>  
+<body onload="load()">  
+    <div id="container"></div>  
+</body>  
+</html> 
